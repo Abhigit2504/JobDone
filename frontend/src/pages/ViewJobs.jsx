@@ -83,7 +83,7 @@ const ViewJobs = () => {
             {/* <p>
               {/* <FaInfoCircle className="icon" />
               <b>About Job:</b> {job.description}
-            </p> */} */}
+            </p> */} 
             <p>
               <FaRupeeSign className="icon" />
               <b>Salary:</b> ₹{job.salary}
