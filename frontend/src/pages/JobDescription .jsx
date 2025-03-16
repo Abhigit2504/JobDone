@@ -55,7 +55,7 @@ const JobDescription = () => {
         </p>
         <p style={styles.detailItem}>
           <FaMoneyBillAlt style={styles.icon} />
-          <strong>Salary:</strong> ₹{job.salary}LPA/Per Mont
+          <strong>Salary:</strong> ₹{job.salary}LPA/Per Month
         </p>
       </div>
       <button
