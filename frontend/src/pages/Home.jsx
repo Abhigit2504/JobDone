@@ -39,9 +39,13 @@ const Home = () => {
             <p style={styles.jobDetail}>
               <FaBuilding style={styles.icon} /> {job.companyName}
             </p>
-            <p style={styles.jobDetail}>
+            {/* <p style={styles.jobDetail}>
               <FaInfoCircle style={styles.icon} /> {job.description}
+            </p> */}
+            <p style={styles.jobDetail}>
+              <FaInfoCircle style={styles.icon} /> {job.location}
             </p>
+            
             <p style={styles.salary}>
               <FaRupeeSign style={styles.icon} /> Salary: ₹{job.salary}
             </p>
