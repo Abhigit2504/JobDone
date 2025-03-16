@@ -1,0 +1,18 @@
+.job-search {
+    padding: 20px;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .no-jobs {
+    color: red;
+    font-size: 1.2rem;
+  }
+  

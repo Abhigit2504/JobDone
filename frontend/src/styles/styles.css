@@ -1,0 +1,268 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #2c3e50;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #1abc9c;
+}
+
+.search-bar {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 300px;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Ensures items are at both edges */
+  align-items: flex-end; /* Aligns items at the bottom */
+  padding: 15px 20px;
+  width: 100%; /* Ensures the navbar spans the full width */
+}
+
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1abc9c;
+}
+
+/* Home Page */
+.home {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.job-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-card .salary {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #1abc9c;
+}
+
+/* Job Description Page */
+.job-details {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.job-details h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.job-details p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.job-details button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.job-details button:hover {
+  background-color: #16a085;
+}
+
+/* Admin Login Page */
+.admin-login {
+  padding: 40px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.admin-login h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-login input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.admin-login input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+.admin-login button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login button:hover {
+  background-color: #16a085;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .job-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .job-card p {
+    font-size: 0.9rem;
+  }
+
+  .admin-login {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+.job-details {
+    padding: 20px;
+  }
+  
+  .take-test {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .take-test:hover {
+    background: #ff4500;
+  }
+  
