@@ -6,7 +6,7 @@ const JobApplications = () => {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:5000/api/userjobdetails')
+    axios.get('https://jobdone.onrender.com/api/userjobdetails')
       .then(response => {
         setApplications(response.data);
       })

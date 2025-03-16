@@ -50,7 +50,7 @@ const UserJobDetails = () => {
       formDataToSend.append('resume', formData.resume);
 
       // Save user job details to MongoDB
-      const response = await fetch(`http://localhost:5000/api/userjobdetails/${id}`, {
+      const response = await fetch(`https://jobdone.onrender.com/api/userjobdetails/${id}`, {
         method: 'POST',
         body: formDataToSend,
       });

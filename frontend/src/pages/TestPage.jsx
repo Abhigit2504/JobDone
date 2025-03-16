@@ -27,7 +27,7 @@ const TestPage = () => {
 
     try {
       // Save user details to MongoDB
-      const response = await fetch('http://localhost:5000/api/users', {
+      const response = await fetch('https://jobdone.onrender.com/api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

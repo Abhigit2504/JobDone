@@ -6,7 +6,7 @@ const TestApplications = () => {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:5000/api/admin/users')
+    axios.get('https://jobdone.onrender.com/api/admin/users')
       .then(response => {
         setUsers(response.data);
       })

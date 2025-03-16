@@ -15,7 +15,7 @@ const AdminDashboard = () => {
   const handleAddJob = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/jobs/add', {
+      const response = await fetch('https://jobdone.onrender.com/api/jobs/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(jobForm),

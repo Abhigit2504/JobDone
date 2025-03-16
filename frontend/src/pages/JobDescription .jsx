@@ -11,7 +11,7 @@ const JobDescription = () => {
   useEffect(() => {
     const fetchJobDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/jobs/${id}`);
+        const response = await fetch(`https://jobdone.onrender.com/api/jobs/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch job details');
         }
