@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer'); // For file uploads
-const UserJobDetails = require('../models/userJobDetails');
+const UserJobDetails = require('../models/UserJobDetails');
 const User = require('../models/User'); // Import User model for validation
 const Job = require('../models/Job'); // Import Job model for validation
 
