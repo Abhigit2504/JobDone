@@ -108,8 +108,8 @@ const JobApplications = () => {
               <td style={styles.tableCell}>{application.yearsOfExperience}</td>
               <td style={styles.tableCell}>{application.role}</td>
               <td style={styles.tableCell}>{application.companyName}</td>
-              <td style={styles.tableCell}>${application.previousSalary}</td>
-              <td style={styles.tableCell}>${application.expectedSalary}</td>
+              <td style={styles.tableCell}>₹{application.previousSalary}</td>
+              <td style={styles.tableCell}>₹{application.expectedSalary}</td>
               <td style={styles.tableCell}>{application.skills}</td>
               <td style={styles.tableCell}>
               <a
